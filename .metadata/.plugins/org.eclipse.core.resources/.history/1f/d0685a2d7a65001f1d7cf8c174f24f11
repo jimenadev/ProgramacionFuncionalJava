@@ -19,9 +19,6 @@ public class main {
 				System.out.println("Hola Mundo "+ nombre);
 			}
 		};
-		
-		saludarDos.Saluda("Codi");
-		saludarDos.Saluda("Codi2");
 
 	}
 

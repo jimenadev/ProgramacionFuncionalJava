@@ -14,14 +14,9 @@ public class main {
 		ISaludar saludarDos = nombre -> {
 			
 			if(nombre.equals("Codi")) {
-				System.out.println("Hola Codi!, tienes el mismo nombre que la mascota de CF");
-			}else{
-				System.out.println("Hola Mundo "+ nombre);
+				System.out.println("Hola Codi!, tienes el mismo nombre que la mascota de CF")
 			}
 		};
-		
-		saludarDos.Saluda("Codi");
-		saludarDos.Saluda("Codi2");
 
 	}
 
