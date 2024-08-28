@@ -1,0 +1,14 @@
+package main;
+
+public class main {
+
+	public static void main(String[] args) {
+		//El compilador infiere el tipo de los parámetros
+		//Podemos modificar el nombre de los parámetros
+		
+		ISaludar saludar = (nombre) -> { System.out.println("Hola Mundo "+ nombre); };
+		saludar.Saluda("Codi");
+
+	}
+
+}

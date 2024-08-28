@@ -1,0 +1,12 @@
+package main;
+
+public class main {
+
+	public static void main(String[] args) {
+		
+		ISaludar saludar = (String usuario) -> { System.out.println("Hola Mundo "+ usuario); };
+		saludar.Saluda("Codi");
+
+	}
+
+}
