@@ -22,20 +22,6 @@ public class main {
 		
 		saludarDos.Saluda("Codi");
 		saludarDos.Saluda("Codi2");
-		
-		
-		ISuma suma = (val1, val2) -> val1 + val2;
-		int resultado = suma.suma(10, 20);
-		System.out.println(resultado);
-		
-		suma = (val1, val2) -> {
-			int  result = val1 + val2;
-			System.out.println("El resultado dentro de la expresión es: "+ result);
-			return result;
-		 };
-		 
-		 resultado = suma.suma(100, 200);
-		 System.out.println(resultado);
 
 	}
 

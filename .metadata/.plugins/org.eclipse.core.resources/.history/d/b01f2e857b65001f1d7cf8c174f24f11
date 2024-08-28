@@ -34,8 +34,7 @@ public class main {
 			return result;
 		 };
 		 
-		 resultado = suma.suma(100, 200);
-		 System.out.println(resultado);
+		 suma.suma(100, 200);
 
 	}
 
