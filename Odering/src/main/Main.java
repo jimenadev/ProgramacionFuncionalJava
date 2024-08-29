@@ -54,7 +54,29 @@ public class Main {
 			.sorted(comparatorCopies.reversed())
 			.limit(3)
 			.forEach(book ->  System.out.println(book.getTitle()));
-
+		
+		
+		System.out.println("-----------------------");
+		
+		Comparator<Book> comparatorTitles = Comparator.comparing( book -> book.getTitle() );
+		
+		books.stream()
+			.sorted(comparatorTitles.reversed())
+			.forEach(book ->  System.out.println(book.getTitle()));
+		
+		System.out.println("-----------------------");
+		
+		Comparator<Book> comparator;
+		
+		if(books.stream().count() > 3) {
+			comparator = Comparator.comparing( book -> book.getCopies() );
+		}else {
+			comparator = Comparator.comparing( book -> book.getTitle() );
+		}
+		
+		books.stream()
+			.sorted(comparator.reversed())
+			.forEach(book ->  System.out.println(book.getTitle()));
 	}
 
 }
